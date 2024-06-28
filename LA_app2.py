@@ -20,7 +20,7 @@ Utilizamos el conjunto de datos de [Inside Airbnb](http://insideairbnb.com/get-t
 # Función para cargar el archivo listings.csv localmente
 @st.cache_data
 def load_data():
-    return pd.read_csv(r'C:\Users\leo21\Desktop\Upgrade_hub\modulo2\proyecto_2\LA_clean.csv')
+    return pd.read_csv(r'LA_clean.csv')
 
 # Cargar los datos
 LA = load_data()
@@ -38,7 +38,7 @@ def show_home():
         st.markdown("""
                     Los datos utilizados en este proyecto han sido proporcionados por InsideAirbnb. Este dataset tiene múltiples columnas que detallan las propiedades de Airbnb en Los Ángeles.
                     """)
-        st.image(r'C:\Users\leo21\Desktop\Upgrade_hub\modulo2\proyecto_2\variables.jpg')
+        st.image(r'variables.jpg')
         
     
     with st.expander("Historia de Los Ángeles"):
@@ -68,7 +68,7 @@ def show_interactive_map():
 def show_dashboard():
     st.title("WordCloud de Amenities")
     st.write("A continuación se muestran los amenities más ofrecidos")
-    st.image(r'C:\Users\leo21\Desktop\Upgrade_hub\modulo2\proyecto_2\wordcloud.png')
+    st.image(r'wordcloud.png')
 
 
 # Función para mostrar el mapa interactivo
@@ -79,7 +79,7 @@ def show_interactive_map():
     
     # Ejemplo de integración de un mapa usando Folium y Streamlit-Folium
     columns_to_load = ['latitude', 'longitude', 'name', 'host_name', 'price', 'bedrooms','neighbourhood_group', 'neighbourhood','price_level','antiguedad_ex','accommodates','has_pet', 'review_scores_rating','room_type']
-    listings = pd.read_csv(r'C:\Users\leo21\Desktop\Upgrade_hub\modulo2\proyecto_2\LA_clean.csv', usecols=columns_to_load)
+    listings = pd.read_csv(r'LA_clean.csv', usecols=columns_to_load)
     # Dividir la pantalla en dos columnas
     map_column, filter_column = st.columns([3, 1])
     
@@ -127,7 +127,7 @@ def show_interactive_map():
 
 
 
-st.sidebar.image(r"C:\Users\leo21\Desktop\Upgrade_hub\modulo2\proyecto_2\airbnbwhite.png", width=150)
+st.sidebar.image(r"airbnbwhite.png", width=150)
 st.sidebar.title("Selección")
 page_options = ["Inicio", "Análisis", "Mapa interactivo"]
 page_selection = st.sidebar.radio("Go to", page_options)
