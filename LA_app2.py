@@ -95,7 +95,7 @@ def show_interactive_map():
             antiguedad_ex = st.slider('Antigüedad', 0, int(listings['antiguedad_ex'].max())+1, value=[0, int(listings['antiguedad_ex'].max())+1])
             accommodates = st.slider('Nº de Huéspedes', 1, listings['accommodates'].max()+1, value=[1, listings['accommodates'].max()+1])
             has_pet = st.radio('Admite mascota', ['Todos', 'Sí', 'No'])
-            review_scores_rating = st.slider('Puntuación', 0, 100, value=[0, 100])
+            review_scores_rating = st.slider('Puntuación', 0, 5, value=[0, 5])
             room_type = st.selectbox('Tipo de alojamiento', ['Todos'] + list(listings['room_type'].unique()))
 
     # Filtrar datos con condiciones para cada filtro
