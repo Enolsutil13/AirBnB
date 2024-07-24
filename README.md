@@ -22,3 +22,5 @@ Explorar los datos de Airbnb utilizando filtros y gráficos interactivos a trav�
 Visualizar la distribución geográfica de los anuncios de Airbnb en Los Ángeles mediante mapas creados a partir de folium
 Analizar las tendencias de precios por barrio y tipo de alojamiento.
 
+##### Echa un vistazo a la aplicación interactiva en Streamlit
+https://airbnb-b5mmt9b76i6pgwdbdpdgzq.streamlit.app/
