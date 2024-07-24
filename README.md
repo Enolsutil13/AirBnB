@@ -23,4 +23,4 @@ Visualizar la distribución geográfica de los anuncios de Airbnb en Los Ángele
 Analizar las tendencias de precios por barrio y tipo de alojamiento.
 
 ##### Echa un vistazo a la aplicación interactiva en Streamlit
-https://airbnb-b5mmt9b76i6pgwdbdpdgzq.streamlit.app/
+- [Link to Streamlit app](https://airbnb-b5mmt9b76i6pgwdbdpdgzq.streamlit.app/)
